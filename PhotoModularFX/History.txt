@@ -1,31 +1,43 @@
+Update 0.3.1153 (01-ago-2018)
+[Modules] 
+-Blur; Blur3; Fast Mode
+-ToneMap; ToneMap3; LocalMap; DoG; Noise2; PlasticWrap; -Faster (because of Internal faster Blur)
+-PlastWrap: Changed 'Details' parameter (Now proportional to image size)
+-RGB2HCY and HCY2RGB: reviewed colorspaces conversion algorithm
+-EDGES: Reviewed algorithm
+[Other]
+-Added 'Add FX-Node Selector' Window
+-Added Projects-Thumbs Preview. +50 MBytes
+-Renaming 'Node' to 'Module'
+
+
 Update 0.3.1114 (03-jul-2018)
-[Nodes] 
+[Modules] 
 [Other]
 -Mousewheel support on Picker Valueinput and Slider
--Mousewheel fix on "Add Node/FX"
--Second Click's issue solved on "Add Node/FX"
+-Mousewheel fix on "Add FX-Node"
+-Second Click's issue solved on "Add FX-Node"
 -Load Project on FileList Keyboard up/down Arrows (ScrollIndexChange)
 
 
-
 Update 0.3.1102 (25-jun-2018)
-[Nodes] 
+[Modules] 
 -NEW: SmoothMM: Smooth Min/Max
 [Other]
 -Bug fix on check for updates
 
 
 Update 0.3.1100 (24-jun-2018)
-[Nodes]
+[Modules]
 -NEW: ColorContrast: Make Lighter choosen hue and darker complementary hue (inspired by Luminar) 
 [Other]
 -Auto Adapt screen zoom to current screen DPI
--Animated connections on node click
+-Animated connections on Module click
 -Icon minor change
 
 
 Update 0.3.1073 (06-jun-2018)
-[Nodes]
+[Modules]
 -New: Mix3W: Mix 3 channels by 3 weights
 -New: Technicolor: 2-Strip & 3-Strip Techincolor effect.
 -MIX2: New option to clamp output between 0-1
@@ -37,7 +49,7 @@ Update 0.3.1073 (06-jun-2018)
 
 
 Update 0.3.1040 (20-Apr-2018)
-[Nodes]
+[Modules]
 -New: FormulaRGB: 3 Output Formulas having 3 inputs.
 -New: NNart: Experimental Neural Network Reconstruction.
 -New: QuantGNG3: Experimental Growing Neural Gas Quantizer.
@@ -48,7 +60,7 @@ Update 0.3.1040 (20-Apr-2018)
 
 
 Update 0.3.910 (26-Mar-2018)
-[Nodes]
+[Modules]
 -New: Mean : Arithmetic Harmonic Contraharmonic and Geometric mean
 -New: Mean3: Arithmetic Harmonic Contraharmonic and Geometric mean (3 channel)
 -New: Invert3: Invert 3 channels out=(1-In)
@@ -61,19 +73,19 @@ Update 0.3.910 (26-Mar-2018)
 -Auto check for Updates.
 -Save "Resize mode" on Settings.ini
 -Custom message box
--Node Setting's Auto Apply (Removed "Apply" button)
+-Module Setting's Auto Apply (Removed "Apply" button)
 -Dark gray GUI
 
 
 Update 0.3.834 (01-Mar-2018)
-[Nodes]
+[Modules]
 [Other]
 -Removed update (download latest version)
 -New "Flat" faster GUI
 
 
 Update 0.3.783 (21-Feb-2018)
-[Nodes]
+[Modules]
 -NEW: CAIR: Content Aware Image Resize.
 -NEW: Plastic: Plastic Wrap Effect.
 -NEW: Crop: Crop Top-Bottom Left-Right
@@ -92,7 +104,7 @@ Update 0.3.783 (21-Feb-2018)
 
 
 Update 0.3.580 (18-Dec-2017)
-[Nodes]
+[Modules]
 -NEW: Stretch;Stretch3: Histogram Stretch.
 -NEW: ToneMap,ToneMap3: Tone Mapping for 1 and 3 channels.
 -Blur;Blur3: Added BOX blur Algo.
@@ -106,11 +118,11 @@ Update 0.3.580 (18-Dec-2017)
 -RGB>HSL;HSL>RGB: Added HSV colorspace conversion.
 [Other] 
 -Sound: Added checkbox to turn "ready output" sound on/off.
--GUI: Little restyles, lighter nodes and draw speedup.
+-GUI: Little restyles, lighter Modules and draw speedup.
 
 
 Update 0.3.462 (15-Sep-2017)
-[Nodes]
+[Modules]
 -New: CubicBezier: Cubic Bezier through 2 given points transform.
 -New: LocalHE3: Local Histogram Equalization (CLAHE) on 3 channels at one time.
 -ThrBlur; ThrBlur3: Optimization (Do not recreate Poisson Disks)
@@ -123,13 +135,13 @@ Update 0.3.462 (15-Sep-2017)
 -PoissonDisk: Applyed Box Muller Transform Distribution
 -PopUp Messages: Little Fix
 -Fonts: some tweaks
--Nodes tooltip: better (removed newlines)
+-Modules tooltip: better (removed newlines)
 -Zoom: Smoother
 
 
 Update 0.3.400 (05-Apr-2017)
-[Nodes]
--INPUT2 added Alpha-Channel node output.
+[Modules]
+-INPUT2 added Alpha-Channel Module output.
 -New INPUTA: Main Input Photo RGB+Alpha Channel
 -New PowEx3: Extended Pow (3 channels)
 -New DCTEqu: Discrete Cosine Transform Equalizer
@@ -160,13 +172,13 @@ Update 0.3.400 (05-Apr-2017)
 -Updated vbRichClient's vbWidgets 
 -Added Load GIF and SVG formats
 -DoubleClick Editor to Switch FullScreen mode (On/Off)
--Nodes tooltips: Added Input/Output Pins description.
+-Modules tooltips: Added Input/Output Pins description.
 -Added WindowHandle to LoadImage Dialog (Form.hWnd)
 
 
 
 Update 0.3.226 (14-Nov-2016)
-[Nodes]
+[Modules]
 -New Split: Split Channel in 2 halfs (useful for stereo images)
 -New Split3: Split 3channels image in 2 halfs (useful for stereo images)
 -New POW3: Power of 3 Channels (Like Pow)
@@ -189,7 +201,7 @@ Update 0.3.226 (14-Nov-2016)
 -StdDEV; TODO StdDEV3: Revisited
 [Other] 
 -Small bug fix of "Keep same Zoom factor at Program Restart" in some systems.
--Allow more than 3 outputs for Nodes (max 6)
+-Allow more than 3 outputs for Modules (max 6)
 -Fix missing "Background" Folder in Package(s)
 -New PopUp-Message Widget.
 -Small Interface restyles
@@ -199,7 +211,7 @@ Update 0.3.226 (14-Nov-2016)
 
 
 Update 0.3.60 (12-Sept-2016)
-[Nodes]
+[Modules]
 - New RENDER: Draw 2nd channel (Foreground) to the 1st Input (Background) at a given position and size
 - New RENDER3: Draw 2nd triplet of inputs (Foreground) to the 1st triplet (Background) at a given position and size
 - New RENDERex: Draw 2nd channel (Foreground) to the 1st Input (Background) at given 4 Corners position
@@ -214,24 +226,24 @@ Update 0.3.60 (12-Sept-2016)
 - OTSU: from 2 Levels (Monochrome) to Multilevels (Max 5)
 [Other]
 -DPI-Aware GUI (to Zoom Use MouseWheel+CNTRL)
--While Zooming keep Node-Parameters-Container at same screen position
+-While Zooming keep Module-Parameters-Container at same screen position
 -Keep same Zoom factor at Program Restart (Settings.ini - File)
--Option to see every Node Output by clicking it
--Experimental auto-connect nodes on New Node MouseUp-event
--Auto Set Default Parameters Values when adding new Node
--Node Parameters tweaker: Diplay more than 6 parameters
+-Option to see every Module Output by clicking it
+-Experimental auto-connect Modules on New Module MouseUp-event
+-Auto Set Default Parameters Values when adding new Module
+-Module Parameters tweaker: Diplay more than 6 parameters
 -LocalHE2: Changes (Mainly ClipLevel parameter scale)
 -BLUR: Bug fix (Picture Borders) and optimization
 -ACE: Revisited
 -VRACE: Revisited
 -Portable Self-Extractor Executable Version (Full/Lite)
--Use of CopyMemory (Faster Inter-Nodes Data transfer. Faster Node that have N of Iterations param.)
+-Use of CopyMemory (Faster Inter-Modules Data transfer. Faster Module that have N of Iterations param.)
 -UC TextUpDown allows negative values
 -Use More Standard MousePointers
 -New "Support" Folder
 
 Update 0.2.1675 (18-Jul-2016)
-[Nodes]
+[Modules]
 - NEW ACE: Adaptive Contrast Enhancement
 - NEW VRACE: Variable Radius Adaptive Contrast Enhancement
 - NEW CannyEdge: Canny Edge Detector
@@ -244,7 +256,7 @@ Update 0.2.1675 (18-Jul-2016)
 
 
 Update 0.2.1652 (05-Jul-2016)
-[Nodes]
+[Modules]
 - NEW LocalHE2: Local Histogram Equalization V2 (CLAHE): works on each pixel.
 [Other]
 - New DropDownList to select Output Filename Prefix/Postfix based on current used Project.
@@ -253,21 +265,21 @@ Update 0.2.1652 (05-Jul-2016)
 
 
 Update 0.2.1615 (24-May-2016)
-[Nodes]
+[Modules]
 - NEW MIX2 x3: Mix 6 channels 2 by 2 same way as MIX2
-- NEW VALUE3 : 3 Constant Values (in 1 node)
+- NEW VALUE3 : 3 Constant Values (in 1 Module)
 - NEW BLEND  : Mix the first-channel with the 2nd-channel by an amount given by 3th Input
 - NEW BLEND3 : Mix the 3-first-channels with the 2nd-3-channels by an amount given by 7th Input 
 [Other]
 - New Button: Delete Project.
-- If Node N-Inputs is greater that 3 draw it with bigger height.
+- If Module N-Inputs is greater that 3 draw it with bigger height.
 - Minor UI restyle
 - Small Bug Fix (Removed Screenshot)
 
 
 
 Update 0.2.1600 (01-May-2016)
-[Nodes]
+[Modules]
 - NEW Morpho: Morphological Erosion;Dialtion;Opening;Closing
 - NEW Skeleton: Morphological Skeleton
 [Other]
@@ -282,18 +294,18 @@ Update 0.2.1600 (01-May-2016)
 
 
 Update 0.2.1547 (01-Apr-2016)
-[Nodes]
+[Modules]
 - NEW TEMP.: Temperature
 - NEW VIBRANCE: Vibrance
 - NEW CHROMAK: Chromakey blend
 - NEW HAZE: Fake Haze effect
 [Other]
-- Nodes and Global ProgressBar
+- Modules and Global ProgressBar
 
 
 
 Update 0.2.1506 (07-Mar-2016)
-[Nodes]
+[Modules]
 - NEW "HUE Harm": HUE Harmonizer
 [Other]
 - "Save Before & After" Check Button; to save both INPUT and OUTPUT in the same Picture.
@@ -301,7 +313,7 @@ Update 0.2.1506 (07-Mar-2016)
 
 
 Update 0.2.1500 (21-Feb-2016)
-[Nodes]
+[Modules]
 - VRLCN:   Changed weight of last Parameter (Radius Selection Sensitivity)
 - BILAOA:  Changed way of flow-Smooth ((2nd way))
 - RGB>YUV: Added YIQ colorspace conversion.
@@ -312,7 +324,7 @@ Update 0.2.1500 (21-Feb-2016)
 
 
 Update 0.2.1467 (07-Jan-2016)
-[Nodes]
+[Modules]
 - NEW BilaOA: Oriented-Aligned Bilateral Filter
 
 - NEW ZMBLUR: Zoom Blur 1 channel
@@ -339,7 +351,7 @@ Update 0.2.1467 (07-Jan-2016)
 
 
 Update 0.2.1400 (21-Dec-2015)
-[Nodes]
+[Modules]
 - NEW ThrBLUR: - Threshold BLUR
 - NEW ThrBLUR3: - Threshold BLUR 3 channels
 - GLOW: New Algorithm
@@ -351,7 +363,7 @@ Update 0.2.1400 (21-Dec-2015)
 
 
 Update 0.2.1354 (08-Dec-2015)
-[Nodes]
+[Modules]
 - NEW Mesh: Straight line draw by salient points.
 - NEW STROKES: Art-Draw Strokes
 - NEW POIS: Art-Draw Pois
@@ -368,7 +380,7 @@ Update 0.2.1354 (08-Dec-2015)
 
 
 Update 0.2.1265 (09-NOV-2015)
-[Nodes]
+[Modules]
 - NEW Diffusion: Iso/Anisotropic Diffusion.
 - VRLCN: Little improvements
 [Other]
@@ -378,7 +390,7 @@ Update 0.2.1265 (09-NOV-2015)
 
 
 Update 0.2.1222 (27-Oct-2015)
-[Nodes]
+[Modules]
 - NEW VRLCN: Variable Radius Local Contrast Normalization (WIP)
 - NEW RGB>YUV ; RGB>YCbCr Colorspace conversion
 - NEW YUV>RGB ; YCbCr>RGB   "
@@ -392,7 +404,7 @@ Update 0.2.1222 (27-Oct-2015)
 
 
 Update 0.2.1162 (10-Oct-2015)
-[Nodes]
+[Modules]
 - NEW Gamma ;and Gamma3 : Forward Inverse Gamma Correction
 - NEW Halftone :  Oriented Round/Squared dots Half toning
 - NEW RGB>XYZ Colorspace conversion
@@ -405,27 +417,27 @@ Update 0.2.1162 (10-Oct-2015)
 
 
 Update 0.2.1103 (15-Sep-2015)
-[Nodes]
+[Modules]
 - NEW BCS :  Brightness Constrast Saturation (RGB)
 - NEW DCT BP: Discrete Cosine Transform Band Pass (experimental)
 - NEW DCT fx: Discrete Cosine Transform FX (experimental)
 - NEW Formula2 : 2 Variables custom Formula
 - NEW Formula3 : 3 Variables custom Formula
 - NEW Offset :  Horizontal-Verical Offset
-- NEW ADD : New node Add. so no need to use [Value]&[Mix2]
+- NEW ADD : New Module Add. so no need to use [Value]&[Mix2]
 [Other]
-- Cntrl-C  and Cntrl-V to copy and paste Parameters value from one node to another (of the same type)
+- Cntrl-C  and Cntrl-V to copy and paste Parameters value from one Module to another (of the same type)
 - PAINT: Added Smoothed parameter
 - RAMP: Added shape option
 - FLOW: New Smooth algorithm
-- GUI: Little Smaller Nodes
+- GUI: Little Smaller Modules
 - Bug Fix FLIP3 : Both
 - Bug Fix RAMP
 
 
 
 Update 0.2.998 (19-Aug-2015)
-[Nodes]
+[Modules]
 * NEW Formula - Editable Custom Formula
 * NEW Sketch - Sketch style abstraction
 * NEW HMD - Height Map Deformer. Deform by Input Height Map
@@ -441,7 +453,7 @@ Update 0.2.998 (19-Aug-2015)
 
 
 Update 0.2.919 (31-jul-2015)
-[Nodes]
+[Modules]
 * NEW RGB>HSL - Colorspace conversion according to Quasimondo.com
 * NEW HSL>RGB - 	"
 * NEW SNN (1D) - Symmeric Nearest Neighour Smoothing filter
@@ -454,7 +466,7 @@ Update 0.2.919 (31-jul-2015)
 
 
 Update 0.2.890 (23-jul-2015)
-[Nodes]
+[Modules]
 * NEW HistoMATCH - Histogram Match (Histogram Match - Change Input1 to match Input2 Histogram)
 * NEW Pixelate - Pixelate
 - FLOW: changed Sobel weights
@@ -464,7 +476,7 @@ Update 0.2.890 (23-jul-2015)
 
 
 Update 0.2.865 (20-jul-2015)
-[Nodes]
+[Modules]
 * NEW Input2 (Secondary Input Picture)
 * NEW Tilt-Shift - Fake Miniature
 * NEW Curve: Simple 5Points Spline Curve transformation (X at every 1/4)
@@ -475,20 +487,20 @@ Update 0.2.865 (20-jul-2015)
 
 
 Update 0.2.822 (21-jun-2015)
-[Nodes]
+[Modules]
 * NEW Sepia (from RGB)
 * NEW Sepia (from GrayScale)
 * NEW Scratches
 * NEW 8-Colors
 [Other]
 - A lot faster "Local HE"
-- Improved Noise-node
+- Improved Noise-Module
 - Improved Histogram Eq. and Local HE.
 
 
 
 Update 0.2.770 (14-jun-2015)
-[Nodes]
+[Modules]
 * Changed Stipple
 * Little change on LCDDisplay (color)
 [Other:]
@@ -499,7 +511,7 @@ Update 0.2.770 (14-jun-2015)
 
 
 Update 0.2.669 (5-jun-2015)
-[Nodes]
+[Modules]
 *New Median
 *New LCD-Display
 *New Glow (Still developing)
@@ -512,9 +524,9 @@ Update 0.2.669 (5-jun-2015)
 
 
 Update 0.2.555 (28-may-2015)
-[Nodes]
-* New RGBtweaker Node
-* New Standard POW Node 
+[Modules]
+* New RGBtweaker Module
+* New Standard POW Module 
 * New Local HE (Histogram Equalization)
 * New Anisotropic Kwuahara (Still developing)
 * New "Pencil Drawing" (Still developing)
@@ -525,7 +537,7 @@ Update 0.2.555 (28-may-2015)
 
 
 Update 0.2.471 (20-may-2015)
-[New Node Effects:]
+[New Module Effects:]
 * Pyramid RGB (Pyramid Based Level-Details enhancement/reduction)
 * Noise Deformer (Spatial deform by Noise)
 * Kuwahara filter (Single channel)
@@ -538,7 +550,7 @@ Update 0.2.471 (20-may-2015)
 
 
 Update 0.2.399 (14-may-2015)
-[New Node Effects:]
+[New Module Effects:]
 * FDoG (DoG along Flow)
 * PYRAMID - Pyramid Based Level-Details enhancement/reduction
 * Noise (Fractional Brownian Motion)
@@ -549,7 +561,7 @@ Update 0.2.399 (14-may-2015)
 
 
 Update 0.2.319 (6-may-2015)
-[New Node Effects:]
+[New Module Effects:]
 * DoG (Difference of Gaussians) - Good for Countours
 * DoG: Fine Radius Tuning: Now R Value can be floating point; Not only integer. (Usefull for small radius)
 * Dithering - Error Diffusion Dithering Floyd-Steinberg; Sierra and others
@@ -558,15 +570,15 @@ Update 0.2.319 (6-may-2015)
 * SmoothStep -
 [Other:]
 * Full Portable: No Dlls registration Needed
-* Node Selector: -Sorted List; -Just click List to ADD new Node
+* Module Selector: -Sorted List; -Just click List to ADD new Module
 * Performances
 
 
 
 Update 0.2.161 (2-may-2015)
--Node parameters tweaking
--New node parameter tweaker (custom vbwidgets-controls)
--Fixed Swapped Red and Blue in Input & Output Nodes.
+-Module parameters tweaking
+-New Module parameter tweaker (custom vbwidgets-controls)
+-Fixed Swapped Red and Blue in Input & Output Modules.
 
 
 
@@ -577,7 +589,7 @@ Update 0.2.140 (30-Apr-2015)
 
 
 Update 0.2.132 (28-Apr-2015)
--Nodes new Look
+-Modules new Look
 -Resizeable main Panel
 -kernels creation: once per size when needed (instead of all sizes at startup)
 -Fixed Error 67 (too many files)
