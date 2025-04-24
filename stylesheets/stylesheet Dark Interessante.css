@@ -1,0 +1,230 @@
+/*
+Simple Dark HTML Template Created By Travis Berry http://www.travisberry.com 
+Licensed under a Creative Commons Attribution 3.0 United States License.
+*/
+/* get fonts loaded asap */
+@font-face {
+font-family: "League Gothic";
+    src: url("fonts/leaguegothic-webfont.eot"); /* IE */  
+    src: local("?"), url("fonts/LeagueGothic.otf") format('opentype');
+}
+@font-face {
+font-family: "Goudy Book";
+    src: url("fonts/goudybookletter1911-webfont.eot"); /* IE */ 
+    src: local("?"), url("fonts/GoudyBookletter1911.otf") format('opentype');
+}
+.fontLoad{
+ 	font-family: "League Gothic", "Goudy Book";   
+}
+/* get fonts loaded asap */
+/* reset */
+body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 2%;
+	padding: 0;
+	border: 1;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  end reset */
+/* main style */
+body{
+	background-color:#232323;
+	background-image:url('img/dark-bg2.png');
+	color:#999;
+	font-family:'Helvetica','Myriad Pro','Verdana', sans-serif;
+}
+h1{
+	font-size:40px;
+	margin-bottom:7px;
+	color:#444;
+	text-shadow: 0 2px 1px #111111;
+	text-transform:uppercase;
+}
+a{
+	text-decoration:none;
+	color:#eee;
+	border-bottom:none !important;
+}
+/* Contact Section Form Style */
+input{
+	-moz-border-radius:2px 2px 2px 2px;
+	-moz-box-shadow:0 3px 5px #111111 inset;
+	border-radius:2px 2px 2px 2px;
+	-webkit-box-shadow:0 3px 5px #111111 inset;
+	background:none repeat scroll 0 0 #282829;
+	border-color:#0D0E0E #0D0E0E #333436;
+	border-style:solid;
+	border-width:1px;
+	color:#FFFFFF;
+	font-size:19px;
+	padding:5px 15px;
+}
+#container{
+	width:960px;
+	margin:auto;
+}
+#main{
+	margin-left:150px;
+	margin-top:15%;
+}
+/* Contact Section Submit Button Style */
+#submit{
+	font-family: "League Gothic", "Goudy Book";
+	-moz-border-radius:2px 2px 2px 2px;
+	-moz-box-shadow:0 3px 5px #111111;
+	border-radius:2px 2px 2px 2px;
+	-webkit-box-shadow:0 3px 5px #111111;
+	background:none repeat scroll 0 0 #282829;
+	border-color:#222;
+	border-style:solid;
+	border-width:1px;
+	color:#FFFFFF;
+	font-size:19px;
+	padding:5px 15px;
+	letter-spacing: 1px;
+}
+#submit:hover{
+	-moz-box-shadow:0 3px 10px #111111;
+	-webkit-box-shadow:0 3px 10px #111111;
+}
+#submit:active{
+	-moz-border-radius:2px 2px 2px 2px;
+	-moz-box-shadow:0 3px 5px #111111 inset;
+	border-radius:2px 2px 2px 2px;
+	-webkit-box-shadow:0 3px 5px #111111 inset;
+	background:none repeat scroll 0 0 #282829;
+	border-color:#0D0E0E #0D0E0E #333436;
+	border-style:solid;
+}
+/* end Contact Section Submit Button Style */
+/* div with slide content */
+.content{
+	width:300px;
+	margin-left:150px;
+	text-shadow: 0 2px 1px #111111;
+	line-height: 1.5em;
+	font-family: "Goudy Book";
+	font-size:16px; 
+}
+/* next slide link */
+.bottom-nav{
+	float: right;
+	margin-top: 15px;
+	text-align: right;
+	width: 100%;
+	cursor:pointer;
+}
+/* span under h1 tag */
+.border{
+	width:300px;
+	display:block;
+	margin-bottom:15px;
+}
+/* accent color for Home Section */
+.red{
+	border-bottom:1px solid #ff3968;
+	color:#ff3968;
+}
+/* accent color for Social Network Section */
+.teal{
+	border-bottom:1px solid #39efff;
+	color:#39efff;
+}
+/* accent color for Contact Section */
+.yellow{
+	border-bottom:1px solid #e5ff39;
+	color:#e5ff39;
+}
+/* icons in Social Network Section */
+.social-icons{
+	margin-right:10px;
+	margin-bottom:10px;
+}
+/* text selection colors */
+::selection {
+	background: #eee; /* Safari */
+	color:#111;
+	}
+::-moz-selection {
+	background: #eee; /* Firefox */
+	color:#111;
+}
+/* end main style */
+/* slider style */
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 510px;
+	/* If you have problems with your slides being too long, change this */
+	min-height:430px;
+}
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accommodate scrollable items.
+	it's enough that you set width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+}
+/*
+	a single item. must be floated in horizontal scrolling.
+	typically, this element is the one that *you* will style
+	the most.
+*/
+.items section {
+	float:left;
+	margin-right:30px;
+}
+/* end slider style */
